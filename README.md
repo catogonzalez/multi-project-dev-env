@@ -6,7 +6,7 @@ This setup allows you to run all your projects (API, Web, and Mobile) with a sin
 
 ```
 your-workspace/
-├── dev-boxes/                   # The existing Traefik & DB setup
+├── dev-boxes/                   # The existing Traefik & DB setup (https://github.com/catogonzalez/dev-boxes)
 │   └── docker-compose.yml
 ├── multi-project/               # This repo
 │   ├── docker-compose.yml
@@ -22,7 +22,7 @@ your-workspace/
 - Docker and Docker Compose
 - Make (optional, but recommended)
 - Admin/sudo rights (to modify /etc/hosts)
-- Your `dev-boxes` environment with Traefik and PostgreSQL already set up
+- Your `dev-boxes` environment with Traefik and PostgreSQL already set up (https://github.com/catogonzalez/dev-boxes)
 
 ## Setup Instructions
 
@@ -57,6 +57,9 @@ your-workspace/
 First, make sure your `dev-boxes` environment is running:
 
 ```bash
+# First, clone the dev-boxes repository if you haven't already
+# git clone https://github.com/catogonzalez/dev-boxes ../dev-boxes
+
 cd ../dev-boxes
 docker-compose up -d
 ```
